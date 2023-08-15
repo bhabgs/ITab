@@ -1,0 +1,69 @@
+.app {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #313642;
+    padding: 16px;
+    .title {
+      position: absolute;
+      left: 20%;
+      right: 20%;
+      text-align: center;
+      font-size: 16px;
+      line-height: 32px;
+      font-weight: 600;
+      color: #fff;
+    }
+    .operation {
+      display: inline-block;
+      margin-left: auto;
+    }
+  }
+  .content {
+    height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px;
+    padding-top: 64px;
+    overflow: auto;
+    background-color: #f2f5f9;
+    .group-title {
+      font-size: 16px;
+      font-weight: 600;
+      margin: 20px 0;
+    }
+  }
+}
+
+.app-item {
+  position: relative;
+  padding: 16px;
+  background-color: #fff;
+  cursor: pointer;
+  .title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 600;
+    height: 18px;
+  }
+  .desc {
+    color: #7d7d7d;
+    font-size: 12px;
+    margin-top: 8px;
+    height: 14px;
+  }
+  .operation {
+    display: none;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  }
+  &:hover .operation {
+    display: block;
+  }
+}
